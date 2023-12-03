@@ -5,10 +5,13 @@
 </head>
 <body>
     <h2>Efficiency Tracker</h2>
-    <input type="number" id="myEfficiency" placeholder="Your Efficiency (0-1)" min="0" max="1" step="0.1">
-    <button onclick="submitEfficiency()">Submit</button>
-    <p id="friendsEfficiency">Friend's Efficiency: </p>
-    <button onclick="getFriendsEfficiency()">Refresh Friend's Efficiency</button>
+    <input type="number" id="seifEfficiency" placeholder="Seif's Efficiency (0-1)" min="0" max="1" step="0.1">
+    <button onclick="submitEfficiency('Seif')">Submit for Seif</button>
+    <input type="number" id="hazemEfficiency" placeholder="Hazem's Efficiency (0-1)" min="0" max="1" step="0.1">
+    <button onclick="submitEfficiency('Hazem')">Submit for Hazem</button>
+    <p id="seifEfficiency">Seif's Efficiency: </p>
+    <p id="hazemEfficiency">Hazem's Efficiency: </p>
+    <button onclick="getEfficiencies()">Refresh Efficiencies</button>
 </body>
 <script src="script.js"></script>
 </html>
